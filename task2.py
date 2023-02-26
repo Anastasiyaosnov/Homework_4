@@ -16,21 +16,10 @@ for i in range(1,amount+1):
 
 massive.append(massive[0])
 
-print(massive)
-
-max = []
-for i in range(1,amount+2):
-    # max.append(massive[i-1] + massive[i] + massive[i+1])
-    print(massive[i-1])
+maximum = []
+for i in range(1,amount):
+    maximum.append(massive[i-1] + massive[i] + massive[i+1])
 
 
+print(f"Максимальное число ягод: {max(maximum)}")
 
-
-# n = int( input( 'n = ' ) )
-# lis = [ int(x) for x in input( '-> ' ).split() ]
-# n = len(lis)
-# lis = lis + lis[:2]
-# ma = 0
-# for i in range(n):
-#     ma = max( ma, lis[i] + lis[i+1] + lis[i+2] )
-# print(ma)
